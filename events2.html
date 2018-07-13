@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example 2 - inclass </title>
+</head>
+<body>
+	<h1>This is an inclass example</h1>
+	<input type="text" id="textbox" onInput="myfun1()"> </input>
+	<br>
+	<p id="demo"></p>
+	<br>
+	<br>
+
+	<button onclick="myfun2()">Click me</button>
+	<p id="demo1"></p>
+
+	<script type="text/javascript">
+		function myfun1()
+		{
+		var x=document.getElementById("textbox").value;
+		document.getElementById("demo").innerHTML="You wrote "+x;
+	}
+
+	function myfun2(){
+		var x1=document.getElementById("textbox").value;
+		document.getElementById("demo1").innerHTML="After clicking " +x1;
+	}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date example</title>
+</head>
+<body>
+<h1>Date example</h1>
+<p id="dateexample"></p>
+<br>
+<br>
+<h1>getTime() method </h1>
+<p id="dateexample2"></p>
+<br>
+<h1>Get Full year</h1>
+<p id="dateexample3"></p>
+<br>
+<h1>Get Month method</h1>
+<P id="dateexample4"></P>
+<h1>Displaying all months</h1>
+<p id="allmonths"></p>
+
+<script type="text/javascript">
+	var a=new Date(1993, 5,2, 21, 0,19);
+	document.getElementById("dateexample").innerHTML=a;
+
+	var b=new Date();
+	// d.getTime();
+	document.getElementById("dateexample2").innerHTML=b.getTime();
+
+	document.getElementById("dateexample3").innerHTML=b.getFullYear();
+
+	document.getElementById("dateexample4").innerHTML=b.getMonth();
+	
+	function myfun() {
+		var months=["January"," Feb", " Mar", " Apr", " May", " June", " July", " August", " Sep", " Oct", " Nov"," Dec"];
+
+		for (var i = 0; i < months.length; i++) {
+			  months[i];
+
+		}
+		return months;
+		// body...
+	}
+	document.getElementById("allmonths").innerHTML=myfun();
+</script>
+</body>
+</html>
